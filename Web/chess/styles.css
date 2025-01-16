@@ -1,0 +1,154 @@
+@media screen and (width > 1920px) {
+
+    .chessboard td,
+    td .piece {
+        height: 2.5cm;
+        width: 2.5cm;
+        padding: 0;
+    }
+
+    .item2 p {
+        margin-top: 10mm;
+        font-size: 40px;
+    }
+
+    td img {
+        height: 2.25cm;
+        margin: 0;
+    }
+
+    .deadPieces th, .deadPieces td {
+        border: solid 2px black;
+        padding: 2.5mm;
+        min-width: 50mm;
+    }
+    
+    .deadPieces th {
+        font-size: 9mm;
+    }
+    
+    .deadPieces tr {
+        height: 2.75cm;
+    }
+    
+    .deadPieces {
+        border-collapse: collapse;
+        border-bottom: outset 5px #000000;
+        border-right: outset 5px #000000;
+        border-top: outset 5px #2d2d2d;
+        border-left: outset 5px #2d2d2d;
+        margin-top: 10mm;
+        background-color: #3d3d3d;
+    }
+
+}
+
+@media screen and (width <=1920px) {
+
+    .chessboard td,
+    td .piece {
+        height: 2cm;
+        width: 2cm;
+        padding: 0;
+    }
+
+    td img {
+        height: 1.5cm;
+        margin: 0;
+    }
+
+    .item2 p {
+        margin-top: 5mm;
+        font-size: 20px;
+    }
+
+    .deadPieces th,
+    .deadPieces td {
+        border: solid 2px black;
+        padding: 1.5mm;
+        min-width: 30mm;
+    }
+
+    .deadPieces th {
+        font-size: 25px;
+    }
+
+    .deadPieces tr {
+        height: 1.75cm;
+    }
+
+    .deadPieces {
+        border-collapse: collapse;
+        border-bottom: outset 5px #000000;
+        border-right: outset 5px #000000;
+        border-top: outset 5px #2d2d2d;
+        border-left: outset 5px #2d2d2d;
+        margin-top: 10mm;
+        background-color: #3d3d3d;
+    }
+
+    td button {
+        width: 27.5mm;
+        height: 1.7cm;
+        margin: 0;
+    }
+
+    .deadPieces {
+        margin: 0;
+    }
+}
+
+td .piece {
+    margin: 0;
+}
+
+.chessboard {
+    margin-top: 0;
+    border-collapse: collapse;
+    border-bottom: outset 5px #000000;
+    border-right: outset 5px #000000;
+    border-top: outset 5px #2d2d2d;
+    border-left: outset 5px #2d2d2d;
+}
+
+.chessboard tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #d6d6d6;
+}
+
+.chessboard tr:nth-child(odd) td:nth-child(even) {
+    background-color: #343434;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(even) {
+    background-color: #d6d6d6;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(odd) {
+    background-color: #343434
+}
+
+html,
+body {
+    min-height: 101%;
+}
+
+.piece {
+    cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    justify-content: space-around;
+}
+
+.grid-item {
+    margin: 0mm 5mm 5mm 5mm;
+    text-align: center;
+    padding: 0mm;
+}
+
+.piecepossible {
+    border: solid 4px red;
+    cursor: pointer;
+}
