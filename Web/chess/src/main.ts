@@ -1,14 +1,15 @@
-import HandleBars from 'handlebars'
+import {BoardComponent} from "./board/board.component";
 
 export abstract class App {
     public static async main(): Promise<void> {
-        const template = await fetch('./components/piece-list.hbs')
-        const compileTemplate = HandleBars.compile(await template.text())
+        const board = new BoardComponent('list')
 
-        const data = {test: 'Hello World'}
+        board.data = {
+            rows: [{fields: [{value: 'Hello World'}, {value: 'Hello World'}]}, {fields: [{value: 'Hello World'}, {value: 'Hello World'}]}]
+        }
+        await board.compile()
 
-        const list = document.getElementById('list');
-        list!.innerHTML = compileTemplate(data)
+        await board.compile()
     }
 }
 
