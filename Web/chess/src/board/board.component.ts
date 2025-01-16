@@ -1,7 +1,7 @@
 import {Component} from '../component'
-import {BoardData} from './model/board-data'
+import {Board} from './board'
 
-export class BoardComponent extends Component<BoardData>{
+export class BoardComponent extends Component<Board>{
   protected template = 'board'
 
   constructor(target: string) {

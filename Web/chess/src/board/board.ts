@@ -1,4 +1,4 @@
-export interface BoardData {
+export interface Board {
   rows: {
     fields: {
       value: string

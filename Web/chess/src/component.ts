@@ -1,25 +1,29 @@
 import Handlebars from 'handlebars'
 
 export abstract class Component<T> {
-  protected readonly target: string
-  protected readonly template: string | null = null
+  protected readonly abstract template: string
+  private readonly target: HTMLElement | null
   private _data: T | null = null
 
   protected constructor(target: string) {
-    this.target = target
+    this.target = document.getElementById(target)
   }
 
   public set data(data: T) {
     this._data = data
   }
 
+  protected getData(): T | null {
+    return this._data
+  }
+
   public async compile(): Promise<void> {
-    if (!this._data || !this.template) return
+    const data: T | null = this.getData()
+    if (!data || !this.target) return
 
-    const template = await fetch(`./components/${this.template}.hbs`)
-    const compile = Handlebars.compile(await template.text())
+    const response = await fetch(`./components/${this.template}.hbs`)
+    const render = Handlebars.compile(await response.text())
 
-    const target = document.getElementById(this.target)
-    if (target) target.innerHTML = compile(this._data)
+    this.target.innerHTML = render(data)
   }
 }

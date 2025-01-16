@@ -14,6 +14,7 @@ export default tsEsLint.config(
       'no-unused-vars': 'error',
       'no-var': 'error',
       'no-undef': 'off',
+      '@typescript-eslint/no-inferrable-types': 'off',
       '@stylistic/indent': ['error', 2],
       '@stylistic/semi': ['error', 'never'],
       '@stylistic/quotes': ['error', 'single']
