@@ -1,7 +1,7 @@
 export interface BoardData {
-    rows: {
-        fields: {
-            value: string
-        }[]
+  rows: {
+    fields: {
+      value: string
     }[]
+  }[]
 }

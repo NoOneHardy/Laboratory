@@ -1,0 +1,9 @@
+[*.ts]
+ij_typescript_indent_size = 2
+ij_typescript_use_double_quotes = false
+ij_typescript_use_semicolon_after_statement = false
+
+[{*.js,*.mjs}]
+ij_javascript_indent_size = 2
+ij_javascript_use_double_quotes = false
+ij_javascript_use_semicolon_after_statement = false
