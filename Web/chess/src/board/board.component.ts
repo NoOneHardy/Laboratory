@@ -1,5 +1,6 @@
 import {Component} from '../component'
 import {Board} from './board'
+import {PieceService} from '../pieces/piece.service'
 
 export class BoardComponent extends Component<Board> {
   protected template = 'board'
@@ -8,20 +9,36 @@ export class BoardComponent extends Component<Board> {
     super(target)
   }
 
+  public async compile(): Promise<void> {
+    await super.compile()
+    for (const piece of PieceService.instance.pieces) {
+      await piece.compile()
+    }
+  }
+
   public init(): void {
-    this.data = {
+    const data: Board = {
       rows: Array.from(Array(8)).map(() => {
         return {
           fields: Array.from(Array(8)).map(() => {
             return {
-              piece: 'pawn1'
+              piece: null
             }
           })
         }
       })
     }
 
-    const data = this.getData()!
-    data.rows[0].fields[0].piece = 'pawn1'
+    for (const piece of PieceService.instance.pieces) {
+      const target = piece.target
+      if (!target) continue
+
+      const col = piece.getData()?.position.x ?? 0
+      const row = piece.getData()?.position.y ?? 0
+
+      data.rows[row].fields[col].piece = target
+    }
+
+    this.data = data
   }
 }

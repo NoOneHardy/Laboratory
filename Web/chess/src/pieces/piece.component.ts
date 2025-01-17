@@ -13,7 +13,7 @@ export abstract class PieceComponent<T extends PieceData> extends Component<T> {
     this.color = color
   }
 
-  protected getData(): T & {type: string | null, color: Color | null} | null {
+  public getData(): T & {type: string | null, color: Color | null} | null {
     const data: T | null = super.getData()
     if (!data) return null
     return {
