@@ -9,7 +9,7 @@ export abstract class PieceComponent<T extends PieceData> extends Component<T> {
   protected readonly color: Color
 
   public constructor(target: string, color: Color) {
-    super(target)
+    super('piece-' + target)
     this.color = color
   }
 
@@ -23,8 +23,8 @@ export abstract class PieceComponent<T extends PieceData> extends Component<T> {
     }
   }
 
-  protected abstract projectMovement(): void
-  protected abstract move(): void
-  protected abstract die(): void
-  protected abstract kill(): void
+  public abstract projectMovement(): void
+  public abstract move(): void
+  public abstract die(): void
+  public abstract kill(): void
 }

@@ -1,3 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.game {
+    .board {
+        --background-white: radial-gradient(#fff, #bbb);
+        --background-black: radial-gradient(#444, #222);
+
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 800px;
+
+        .row {
+            display: flex;
+            height: 100px;
+            width: 100%;
+
+            .field {
+                display: flex;
+                height: 100%;
+                width: 12.5%;
+                background-image: var(--background-black);
+                padding: .5em;
+
+                &:nth-child(odd) {
+                    background-image: var(--background-white);
+                }
+            }
+
+            &:nth-child(even) {
+                .field {
+                    &:nth-child(odd) {
+                        background-image: var(--background-black);
+                    }
+
+                    &:nth-child(even) {
+                        background-image: var(--background-white);
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (width > 1920px) {
 
     .chessboard td,

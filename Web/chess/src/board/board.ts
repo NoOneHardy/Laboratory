@@ -1,7 +1,7 @@
 export interface Board {
   rows: {
     fields: {
-      value: string
+      piece: string | null
     }[]
   }[]
 }

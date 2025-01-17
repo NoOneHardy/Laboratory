@@ -4,15 +4,10 @@ import {Color} from './pieces/color'
 
 export abstract class GameEngine {
   public static async main(): Promise<void> {
-    const board = new BoardComponent('list')
-
-    board.data = {
-      rows: [{fields: [{value: 'Hello World'}, {value: 'Hello World'}]}, {fields: [{value: 'Hello World'}, {value: 'Hello World'}]}]
-    }
-
+    const board = new BoardComponent('board')
     await board.compile()
 
-    const pawn = new PawnComponent('pawn', Color.BLACK)
+    const pawn = new PawnComponent('pawn1', Color.BLACK)
     pawn.data = {
       isDisabled: false,
       isTouched: false,
