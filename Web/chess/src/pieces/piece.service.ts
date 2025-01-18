@@ -1,11 +1,11 @@
 import {PieceComponent} from './piece.component'
-import {PieceData} from './piece-data'
+import {Piece} from './piece'
 import {Color} from './color'
 import {PawnComponent} from './pawn/pawn.component'
 
 export class PieceService {
   private static _instance: PieceService
-  private _pieces: PieceComponent<PieceData>[] = []
+  private _pieces: PieceComponent<Piece>[] = []
 
   private constructor() {
     this.init()
@@ -18,7 +18,7 @@ export class PieceService {
     return PieceService._instance
   }
 
-  public get pieces(): PieceComponent<PieceData>[] {
+  public get pieces(): PieceComponent<Piece>[] {
     return this._pieces.slice()
   }
 
@@ -29,9 +29,23 @@ export class PieceService {
       pawn.data = {
         isDisabled: false,
         isTouched: false,
+        isActive: false,
         position: {x: i, y: 1}
       }
       this._pieces.push(pawn)
+    }
+  }
+
+  public async resetSelection(): Promise<void> {
+    for (const p of this._pieces) {
+      const data = p.getData()
+      if (!data) continue
+
+      p.data = {
+        ...data,
+        isActive: false
+      }
+      await p.compile()
     }
   }
 }

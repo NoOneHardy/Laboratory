@@ -41,4 +41,8 @@ export class BoardComponent extends Component<Board> {
 
     this.data = data
   }
+
+  protected async click($event: MouseEvent): Promise<void> {
+    await super.click($event)
+  }
 }

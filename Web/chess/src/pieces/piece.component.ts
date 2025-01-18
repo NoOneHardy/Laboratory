@@ -1,14 +1,14 @@
 import {Component} from '../component'
 import {Color} from './color'
-import {PieceData} from './piece-data'
+import {Piece} from './piece'
 
-export abstract class PieceComponent<T extends PieceData> extends Component<T> {
+export abstract class PieceComponent<T extends Piece> extends Component<T> {
   protected readonly template: string = 'piece'
 
   protected readonly abstract type: string
   protected readonly color: Color
 
-  public constructor(target: string, color: Color) {
+  protected constructor(target: string, color: Color) {
     super('piece-' + target)
     this.color = color
   }

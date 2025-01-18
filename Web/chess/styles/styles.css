@@ -27,6 +27,12 @@
                 &:nth-child(odd) {
                     background-image: var(--background-white);
                 }
+
+                .piece {
+                    &.-active {
+                        transform: scale(1.1);
+                    }
+                }
             }
 
             &:nth-child(even) {

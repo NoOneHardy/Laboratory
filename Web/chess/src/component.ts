@@ -2,11 +2,12 @@ import Handlebars from 'handlebars'
 
 export abstract class Component<T> {
   protected readonly abstract template: string
+  protected host: HTMLElement | null = null
   private readonly _target: string | null = null
   private _data: T | null = null
 
   protected constructor(target: string) {
-    this._target = target
+    this._target = `--${target}`
     this.init()
   }
 
@@ -24,18 +25,20 @@ export abstract class Component<T> {
 
   public async compile(): Promise<void> {
     const data: T | null = this.getData()
-    if (!data || !this._target) return
+    this.host = document.querySelector('.' + this._target)
+    if (!data || !this.host) return
 
     const response = await fetch(`./components/${this.template}.hbs`)
     const render = Handlebars.compile(await response.text())
-    const html = render(data)
-
-    document.querySelectorAll('.--' + this._target).forEach((node) => {
-      node.innerHTML = html
-    })
+    this.host.innerHTML = render(data)
+    this.host?.addEventListener('click', async $event => await this.click($event))
   }
 
   public init(): void {
     return
+  }
+
+  protected async click($event: MouseEvent): Promise<void> {
+    $event.stopPropagation()
   }
 }

@@ -1,4 +1,4 @@
-import {PieceData} from '../piece-data'
+import {Piece} from '../piece'
 
-export interface Pawn extends PieceData {
+export interface Pawn extends Piece {
 }
