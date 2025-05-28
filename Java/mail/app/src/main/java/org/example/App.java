@@ -8,6 +8,8 @@ import java.util.Properties;
 
 public class App {
     public static void main(String[] args) {
+        String username = "info@wm.no1hardy.ch";
+
         // Set properties
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -19,7 +21,7 @@ public class App {
         Authenticator auth = new Authenticator() {
             //override the getPasswordAuthentication method
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("silas@no1hardy.ch", "sj[PLaui@]3${j[rnXS%e@K~}");
+                return new PasswordAuthentication(username, "");
             }
         };
 
@@ -31,13 +33,13 @@ public class App {
             Message message = new MimeMessage(session);
 
             // Set From: header field
-            message.setFrom(new InternetAddress("silas@no1hardy.ch"));
+            message.setFrom(new InternetAddress(username));
 
             // Set To: header field
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("siha3@outlook.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("siha@outlook.com"));
 
             // Set Subject: header field
-            message.setSubject("Test Email from Java");
+            message.setSubject("Herzlich Willkommen beim Tippspiel für die WM 2026!");
 
             // Set the actual message
             message.setText("Hello, this is a test email!");
