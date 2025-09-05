@@ -1,0 +1,20 @@
+:host {
+  display: block;
+}
+app-connection {
+  margin-left: 20px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+
+  .date {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    transform: translateY(0);
+    border-radius: 50%;
+  }
+}

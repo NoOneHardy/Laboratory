@@ -1,0 +1,8 @@
+<ng-container *ngIf="data">
+  <div class="timeline">
+    <app-event *ngFor="let item of data; index as i"
+               [id]="item.id"
+               [item]="item"
+               [i]="i"/>
+  </div>
+</ng-container>
