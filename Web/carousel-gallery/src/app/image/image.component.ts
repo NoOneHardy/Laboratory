@@ -1,9 +1,8 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgIf, NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'n1h-image',
-  standalone: true,
   imports: [
     NgOptimizedImage,
     NgIf

@@ -9,7 +9,6 @@ import {interval, Subscription} from "rxjs";
   animations: [
     rotate
   ],
-  standalone: true,
   imports: [CommonModule, ImageComponent, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
