@@ -3,7 +3,6 @@ import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'date-root',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
