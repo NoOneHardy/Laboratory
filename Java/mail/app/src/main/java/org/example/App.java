@@ -1,8 +1,13 @@
 package org.example;
 
+import jakarta.activation.DataHandler;
+import jakarta.activation.DataSource;
+import jakarta.activation.FileDataSource;
 import jakarta.mail.*;
 import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeBodyPart;
 import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMultipart;
 
 import java.util.Properties;
 
@@ -21,7 +26,7 @@ public class App {
         Authenticator auth = new Authenticator() {
             //override the getPasswordAuthentication method
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(username, "");
+                return new PasswordAuthentication(username, "c^UX@{`kqjC[k[(vWP9P4s`Aw");
             }
         };
 
@@ -36,13 +41,25 @@ public class App {
             message.setFrom(new InternetAddress(username));
 
             // Set To: header field
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("siha@outlook.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("silas.hardegger@outlook.com"));
 
             // Set Subject: header field
             message.setSubject("Herzlich Willkommen beim Tippspiel für die WM 2026!");
 
-            // Set the actual message
-            message.setText("Hello, this is a test email!");
+            MimeMultipart multipart = new MimeMultipart("related");
+            BodyPart messageBodyPart = new MimeBodyPart();
+
+            String htmlText = "<style>h1 {color: red;}</style><h1>Herzlich Wilkommen</h1><img src=\"cid:image\">";
+            messageBodyPart.setContent(htmlText, "text/html");
+            multipart.addBodyPart(messageBodyPart);
+
+            messageBodyPart = new MimeBodyPart();
+            DataSource fds = new FileDataSource("D:\\Programmierung\\laboratory\\Java\\mail\\app\\src\\test\\resources\\20250514_071208.jpg");
+            messageBodyPart.setDataHandler(new DataHandler(fds));
+            messageBodyPart.setHeader("Content-ID", "<image>");
+            multipart.addBodyPart(messageBodyPart);
+
+            message.setContent(multipart);
 
             // Send message
             Transport.send(message);
