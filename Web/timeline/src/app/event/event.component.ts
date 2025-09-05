@@ -6,7 +6,6 @@ import {ScrollAnimationDirective} from '../shared/directives/scroll-animation.di
 
 @Component({
   selector: 'app-event',
-  standalone: true,
   imports: [
     ConnectionComponent,
     NgIf,

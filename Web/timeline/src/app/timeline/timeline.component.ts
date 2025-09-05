@@ -4,7 +4,6 @@ import {EventComponent} from '../event/event.component'
 
 @Component({
   selector: 'app-timeline',
-  standalone: true,
   imports: [
     NgIf,
     EventComponent,

@@ -4,7 +4,6 @@ import {TimelineComponent} from './timeline/timeline.component'
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [CommonModule, TimelineComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
