@@ -1,0 +1,12 @@
+<h1>{{ createDate(activeMonth) | date:'MMMM'}}</h1>
+<div class="month">
+  <div class="week" *ngFor="let week of getWeeksOfMonth(activeMonth)">
+    <div class="wrapper" *ngFor="let day of week" [class.today]="day.valueOf() === today.valueOf()">
+    <span class="day">
+      {{ day | date:'d' }}
+    </span>
+    </div>
+  </div>
+</div>
+
+<button (click)="activeMonth = activeMonth + 1">Next</button>
