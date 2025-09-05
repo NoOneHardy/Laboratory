@@ -13,24 +13,23 @@ import {
 } from "../shared/gallery-animations";
 
 @Component({
-  selector: 'n1h-gallery-slider',
-  animations: [
-    toMainGallery,
-    toPreviousGallery,
-    toNextGallery,
-    toNextGallery2,
-    toNextGallery3
-  ],
-  standalone: true,
-  imports: [
-    NgOptimizedImage,
-    NgIf,
-    NgForOf,
-    GalleryComponent,
-    RouterLink
-  ],
-  templateUrl: './gallery-slider.component.html',
-  styleUrl: './gallery-slider.component.css'
+    selector: 'n1h-gallery-slider',
+    animations: [
+        toMainGallery,
+        toPreviousGallery,
+        toNextGallery,
+        toNextGallery2,
+        toNextGallery3
+    ],
+    imports: [
+        NgOptimizedImage,
+        NgIf,
+        NgForOf,
+        GalleryComponent,
+        RouterLink
+    ],
+    templateUrl: './gallery-slider.component.html',
+    styleUrl: './gallery-slider.component.css'
 })
 export class GallerySliderComponent {
   galleries: Gallery[] = [

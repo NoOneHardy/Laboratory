@@ -3,13 +3,12 @@ import {Gallery} from "../shared/interfaces/gallery";
 import {NgOptimizedImage} from "@angular/common";
 
 @Component({
-  selector: 'n1h-gallery',
-  standalone: true,
-  imports: [
-    NgOptimizedImage
-  ],
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.css'
+    selector: 'n1h-gallery',
+    imports: [
+        NgOptimizedImage
+    ],
+    templateUrl: './gallery.component.html',
+    styleUrl: './gallery.component.css'
 })
 export class GalleryComponent implements OnInit, OnChanges {
   @Input() gallery?: Gallery
