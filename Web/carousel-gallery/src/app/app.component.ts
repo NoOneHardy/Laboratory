@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
-import {RouterOutlet} from '@angular/router';
 import {ImageComponent} from "./image/image.component";
 import {rotate} from "./shared/animations";
 import {interval, Subscription} from "rxjs";
@@ -11,14 +10,13 @@ import {interval, Subscription} from "rxjs";
     rotate
   ],
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ImageComponent, NgOptimizedImage],
+  imports: [CommonModule, ImageComponent, NgOptimizedImage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   active: Image
   auto: Subscription
-  title = 'carousel-gallery';
   states = [
     'gallery1',
     'gallery2',
@@ -124,7 +122,7 @@ export class AppComponent {
     if (e.deltaY < 0) {
       this.previous()
     }
-    this.timeout = setTimeout(() => {
+    this.timeout = window.setTimeout(() => {
       this.auto = this.refreshSubscription()
     }, 5000)
   }
