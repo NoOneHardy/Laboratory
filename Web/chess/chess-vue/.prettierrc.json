@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "bracketSpacing": false,
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files": [
+        "*.vue"
+      ],
+      "options": {
+        "parser": "vue",
+        "bracketSameLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
+}
