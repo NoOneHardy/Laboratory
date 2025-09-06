@@ -5,13 +5,11 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.util.stream.Collectors;
+import java.nio.file.Path;
+import java.util.List;
 
 @Controller
 public class FileUploadController {
@@ -23,14 +21,9 @@ public class FileUploadController {
     }
 
     @GetMapping("/")
-    public String listUploadedFiles(Model model) {
-        model.addAttribute("files", storageService.loadAll().map(
-                path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
-                        "serveFile",
-                        path.getFileName().toString()).build().toUri().toString())
-                .collect(Collectors.toList()));
-
-        return "uploadForm";
+    public ResponseEntity<List<String>> listUploadedFiles() {
+        return ResponseEntity.ok()
+                .body(storageService.loadAll().map(Path::getFileName).map(Path::toString).toList());
     }
 
     @GetMapping("/files/{filename:.+}")
@@ -46,10 +39,9 @@ public class FileUploadController {
     }
 
     @PostMapping("/")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes attr) {
+    public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file) {
         storageService.store(file);
-        attr.addFlashAttribute("message", "You successfully uploaded " + file.getOriginalFilename() + "!");
-        return "uploadForm";
+        return ResponseEntity.ok().body(file.getOriginalFilename());
     }
 
     @ExceptionHandler(StorageFileNotFoundException.class)
