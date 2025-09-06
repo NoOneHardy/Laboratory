@@ -1,52 +1,55 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
+import {Board} from '@/model/board.ts'
+import PieceComponent from '@/components/PieceComponent.vue';
+
+const board = new Board()
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <article
+      id="dead-white"
+      class="dead">
+    </article>
+    <section id="board">
+      <div
+        v-for="row in board.rows"
+        :key="row.index"
+        class="row">
+        <div
+          v-for="cell in row.cells"
+          :key="cell.id"
+          class="cell">
+          <PieceComponent
+            v-if="cell.piece"
+            :piece="cell.piece" />
+        </div>
+      </div>
+    </section>
+    <article
+      id="dead-black"
+      class="dead"></article>
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 800px;
+  height: 800px;
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
+  .cell {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    height: 100%;
+    width: 100%;
+    background-color: #769656;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  .row:nth-child(even) .cell:nth-child(even), .row:nth-child(odd) .cell:nth-child(odd) {
+    background-color: #eeeed2;
   }
 }
 </style>
