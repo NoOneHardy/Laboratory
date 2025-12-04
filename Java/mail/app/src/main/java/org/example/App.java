@@ -14,6 +14,7 @@ import java.util.Properties;
 public class App {
     public static void main(String[] args) {
         String username = "info@wm.no1hardy.ch";
+        String password = "";
 
         // Set properties
         Properties props = new Properties();
@@ -26,7 +27,7 @@ public class App {
         Authenticator auth = new Authenticator() {
             //override the getPasswordAuthentication method
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(username, "c^UX@{`kqjC[k[(vWP9P4s`Aw");
+                return new PasswordAuthentication(username, password);
             }
         };
 
