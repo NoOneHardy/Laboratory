@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_language_system">System</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_week">Woche beginnt am</string>
+    <string name="settings_week_monday">Montag</string>
+    <string name="settings_week_sunday">Sonntag</string>
+    <string name="settings_input">Eingabe</string>
+    <string name="settings_rappen_first">Rappen zuerst (1250 → CHF 12.50)</string>
+    <string name="settings_notifications">Mitteilungen</string>
+    <string name="settings_daily_reminder">Tägliche Erinnerung</string>
+    <string name="settings_reminder_hour">%1$d:00</string>
+    <string name="settings_contract_reminders">Erinnerungen an Kündigungsfristen</string>
+    <string name="settings_presentation">Darstellung</string>
+    <string name="settings_reduce_effects">Effekte reduzieren</string>
+    <string name="settings_reduce_effects_body">Schaltet Rasterlinien, Flackern, Leuchten und Partikel ab. Alles bleibt lesbar, nichts wird versteckt.</string>
+    <string name="settings_sound">Ton</string>
+    <string name="settings_backup">Sicherung</string>
+    <string name="settings_backup_body">ORBIT-7 hat keine Cloud – die Sicherung ist eine Datei, die du selbst exportierst. Bewahre sie dort auf, wo du sie nicht zusammen mit dem Handy verlierst.</string>
+    <string name="settings_export">Sicherungsdatei exportieren</string>
+    <string name="settings_import">Sicherungsdatei importieren</string>
+    <string name="settings_import_confirm_title">Alles ersetzen?</string>
+    <string name="settings_import_confirm_body">Der Import ersetzt sämtliche Daten auf diesem Gerät durch den Inhalt der Datei.</string>
+    <string name="settings_danger">Daten</string>
+    <string name="settings_wipe">Alle Daten löschen</string>
+    <string name="settings_wipe_confirm_title">Wirklich alles löschen?</string>
+    <string name="settings_wipe_confirm_body">Jede Ausgabe, jeder Vertrag, jede Abrechnung und jeder Energiepunkt. Es gibt keine Kopie in der Cloud, und rückgängig machen lässt sich das nicht.</string>
+    <string name="settings_wipe_confirm_action">Alles löschen</string>
+    <string name="settings_about">Über die App</string>
+    <string name="settings_about_body">ORBIT-7 hat keine Internet-Berechtigung. Deine Daten können dieses Gerät nicht verlassen – die App ist technisch gar nicht in der Lage, sie irgendwohin zu senden.</string>
+
+    <string name="onboarding_pitch_caption">ORBIT-7</string>
+    <string name="onboarding_pitch_body">Jeder Franken, den du nicht ausgibst, wird zu Energie. Energie bringt ORBIT-7 zurück ans Netz, Modul für Modul. Erfasse, was du ausgibst, bleib unter dem Budget – und sieh zu, wie eine dunkle Station aufleuchtet.</string>
+    <string name="onboarding_station_dark">Eine dunkle Orbitalstation, die auf Energie wartet</string>
+    <string name="onboarding_categories_caption">Wofür gibst du Geld aus?</string>
+    <string name="onboarding_categories_body">Startwerte, keine Vorschriften. Du kannst sie jetzt oder später ändern.</string>
+    <string name="onboarding_total">%1$s pro Monat</string>
+    <string name="onboarding_reminder_caption">Eine Erinnerung pro Tag</string>
+    <string name="onboarding_reminder_body">Eine Mitteilung am Abend, und nur wenn du die App an dem Tag nicht geöffnet hast. Sie kann mit einem Tipp eine Ausgabe erfassen oder einen ruhigen Tag vermerken.</string>
+    <string name="onboarding_no_reminder">Danke, keine Erinnerung</string>
+    <string name="onboarding_start">Station starten</string>
+</resources>

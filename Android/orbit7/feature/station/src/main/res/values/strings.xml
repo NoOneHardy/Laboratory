@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bridge_title">Bridge</string>
+    <string name="bridge_booting">Booting</string>
+    <string name="bridge_booting_body">Bringing the grid up…</string>
+    <string name="bridge_power">Power</string>
+    <string name="bridge_power_description">%1$d energy points stored</string>
+    <string name="bridge_provisional">%1$d EP this week so far — not banked until the week closes</string>
+    <string name="bridge_week_headroom">Reactor headroom</string>
+    <string name="bridge_remaining">%1$s left this week</string>
+    <string name="bridge_overdrawn_by">%1$s over budget</string>
+    <string name="bridge_gauge_remaining">%1$s of this week\'s budget remaining</string>
+    <string name="bridge_gauge_overdrawn">Overdrawn by %1$s</string>
+    <string name="bridge_zero_spend_mark">Nothing spent today</string>
+    <string name="bridge_zero_spend_confirmed">Marked: nothing spent today</string>
+    <string name="bridge_streak">Streak: %1$d weeks, +%2$d%%</string>
+    <string name="bridge_deadline">Next deadline</string>
+    <string name="bridge_deadline_body">%1$s — %2$d days left to cancel</string>
+    <string name="bridge_deadline_urgent">Cancellation deadline in %1$d days</string>
+    <string name="bridge_settlement_ready">The week has been settled</string>
+    <string name="bridge_settlement_open">See what you generated</string>
+    <string name="bridge_first_run_caption">ORBIT-7 is dark</string>
+    <string name="bridge_first_run_body">Log what you spend. Whatever stays under budget becomes power at the end of the week, and power brings the station back online.</string>
+    <string name="bridge_first_run_action">Log the first entry</string>
+
+    <string name="station_title">Station</string>
+    <string name="station_description">ORBIT-7: %1$s</string>
+    <string name="station_description_module">%1$s level %2$d of %3$d</string>
+    <string name="station_description_dark">ORBIT-7 is dark. No module has power yet.</string>
+    <string name="station_module_description">%1$s, level %2$d of %3$d, next level %4$d energy points</string>
+    <string name="station_level_short">L%1$d</string>
+    <string name="station_next_goal">Next goal</string>
+    <string name="station_ep_to_go">%1$s — %2$d EP to go</string>
+    <string name="station_power_up">Power up</string>
+    <string name="station_maxed">Fully upgraded</string>
+    <string name="station_locked">Needs %1$s</string>
+    <string name="station_requires">Power up %1$s first.</string>
+    <string name="station_shortfall">%1$d EP short.</string>
+
+    <string name="settlement_title">Week settled</string>
+    <string name="settlement_none">Nothing has been settled yet.</string>
+    <string name="settlement_generated_description">%1$d energy points generated</string>
+    <string name="settlement_breakdown">%1$d EP generated · confidence %2$d%% · streak +%3$d%% · %4$d EP vented</string>
+    <string name="settlement_week">The week</string>
+    <string name="settlement_budget_vs_spend">Budgeted %1$s, spent %2$s</string>
+    <string name="settlement_signal_days">%1$d of 7 days carried a signal</string>
+    <string name="settlement_streak_advanced">Streak holds. Bonus +%1$d%%</string>
+    <string name="settlement_streak_reset">Grid resync. Streak bonus reset to ×1.00</string>
+    <string name="settlement_now_affordable">Now affordable</string>
+    <string name="settlement_open_station">Go to the station</string>
+</resources>

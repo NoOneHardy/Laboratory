@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Debug-only surfaces: the component gallery used for manual design review on a real device, and
+  the time-travel screen that simulates a year of play. Neither exists in a release build.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".debug.DebugActivity"
+            android:exported="true"
+            android:label="@string/debug_activity_label"
+            android:theme="@style/Theme.Orbit7">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

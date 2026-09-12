@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_title">Budgets</string>
+    <string name="budget_period_month">Monat</string>
+    <string name="budget_period_week">Woche</string>
+    <string name="budget_baseline_caption">Referenzwert</string>
+    <string name="budget_baseline_pending">Ein Referenzwert braucht 28 Tage Daten in einer Kategorie. Erfasse weiter, dann erscheint die Markierung von selbst.</string>
+    <string name="budget_baseline_value">Referenzwert %1$s pro Woche</string>
+    <string name="budget_suggestion_caption">Vorschlag</string>
+    <string name="budget_suggestion_body">Dein Referenzwert liegt bei %1$s pro Woche. Ziel %2$s?</string>
+    <string name="budget_suggestion_accept">Übernehmen</string>
+    <string name="budget_spent_of">%1$s von %2$s</string>
+</resources>

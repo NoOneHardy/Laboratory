@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ORBIT-7 ships without the INTERNET permission. Not "we don't send your data" — the app is
+  technically incapable of it (docs/01-concept.md, privacy stance). Nothing in this module may
+  ever add one.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+</manifest>

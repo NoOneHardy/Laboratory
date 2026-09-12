@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="quick_add_title">Neuer Eintrag</string>
+    <string name="quick_add_edit">Eintrag bearbeiten</string>
+    <string name="quick_add_amount_description">Betrag: %1$s</string>
+    <string name="quick_add_amount_required">Betrag eingeben, dann speichern.</string>
+    <string name="quick_add_add_note">Notiz hinzufügen</string>
+    <string name="quick_add_previous_day">Früher</string>
+    <string name="quick_add_next_day">Später</string>
+    <string name="quick_add_saved">%1$s erfasst</string>
+    <string name="numpad_digit">Ziffer %1$d</string>
+    <string name="numpad_clear">C</string>
+    <string name="numpad_clear_description">Betrag löschen</string>
+    <string name="numpad_backspace">←</string>
+    <string name="numpad_backspace_description">Letzte Ziffer löschen</string>
+
+    <string name="log_title">Journal</string>
+    <string name="log_empty_title">Noch nichts erfasst</string>
+    <string name="log_empty_body">Jeder Eintrag ist ein Signaltag – und Signaltage sind es, die eine Woche voll auszahlen lassen.</string>
+    <string name="log_filtered_empty_title">Keine Einträge zu diesen Filtern</string>
+    <string name="log_clear_filters">Filter zurücksetzen</string>
+    <string name="log_day_total">%1$s</string>
+    <string name="log_month_total">%1$s im %2$s</string>
+    <string name="log_entry_description">%1$s, %2$s, %3$s</string>
+    <string name="log_deleted">Eintrag gelöscht</string>
+    <string name="log_filter_category">Kategorie</string>
+    <string name="log_filter_all">Alle</string>
+    <string name="log_filter_range">Zeitraum</string>
+    <string name="log_range_this_month">Dieser Monat</string>
+    <string name="log_range_last_30">Letzte 30 Tage</string>
+    <string name="log_range_all">Alles</string>
+</resources>

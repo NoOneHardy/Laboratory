@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Stationsenergie und was vom Wochenbudget übrig ist.</string>
+    <string name="widget_power">%1$d EP</string>
+    <string name="widget_power_description">Stationsenergie: %1$d Energiepunkte</string>
+    <string name="widget_remaining">%1$s übrig</string>
+    <string name="widget_today">Heute %1$s</string>
+    <string name="widget_quick_add">Ausgabe erfassen</string>
+    <string name="widget_empty">ORBIT-7 öffnen, um zu starten</string>
+</resources>

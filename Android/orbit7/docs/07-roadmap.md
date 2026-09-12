@@ -1,5 +1,8 @@
 # 07 — Roadmap, Risks and Open Questions
 
+> **Status:** P0–P6 are implemented. What that means precisely — including what has been run and
+> what has not — is recorded in [08 — Implementation notes](08-implementation-notes.md).
+
 Seven phases. Each ends with **green CI** and something demoable on a real device. The order is
 deliberate: the test infrastructure exists before the features, and the design system exists before
 the screens that use it.
@@ -133,4 +136,4 @@ Not blocking P0, but needed before the phase in brackets:
 
 ---
 
-Previous: [06 — Test strategy](06-test-strategy.md) · Back to [README](../README.md)
+Previous: [06 — Test strategy](06-test-strategy.md) · Next: [08 — Implementation notes](08-implementation-notes.md)

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- de-CH. Kein Eszett: Schweizer Rechtschreibung schreibt «ss». -->
+<resources>
+    <string name="category_groceries">Lebensmittel</string>
+    <string name="category_eating_out">Auswärts essen</string>
+    <string name="category_transport">Verkehr</string>
+    <string name="category_household">Haushalt</string>
+    <string name="category_health">Gesundheit</string>
+    <string name="category_leisure">Freizeit</string>
+    <string name="category_subscriptions">Abos</string>
+    <string name="category_other">Übriges</string>
+
+    <string name="module_reactor_core">Reaktorkern</string>
+    <string name="module_life_support">Lebenserhaltung</string>
+    <string name="module_hydroponics">Hydroponik</string>
+    <string name="module_comms_array">Funkanlage</string>
+    <string name="module_observation_deck">Beobachtungsdeck</string>
+    <string name="module_hangar">Hangar</string>
+    <string name="module_cryo_lab">Kryolabor</string>
+
+    <string name="module_reactor_core_desc">Das Herz des Netzes. Erhöht die Energiekapazität und lässt die ganze Station eine Stufe heller leuchten.</string>
+    <string name="module_life_support_desc">Luft, Wasser, Wärme. Die Station meldet nicht mehr «kritisch».</string>
+    <string name="module_hydroponics_desc">Der Gewächsring. Grünes, das im Dunkeln wächst.</string>
+    <string name="module_comms_array_desc">Öffnet einen Kanal. Schaltet Wochenaufträge frei.</string>
+    <string name="module_observation_deck_desc">Ein Fenster und eine Instrumentenbank. Schaltet die Auswertung frei.</string>
+    <string name="module_hangar_desc">Andockklammern und ein eigenes Schiff draussen.</string>
+    <string name="module_cryo_lab_desc">Das lange Projekt. Ein Ort für Energie, die noch nicht ausgegeben wird.</string>
+
+    <string name="action_save">Speichern</string>
+    <string name="action_save_changes">Änderungen speichern</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="action_undo">Rückgängig</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_dismiss">Ausblenden</string>
+    <string name="action_continue">Weiter</string>
+    <string name="action_skip">Überspringen</string>
+    <string name="state_selected">ausgewählt</string>
+    <string name="state_not_selected">nicht ausgewählt</string>
+    <string name="state_on">ein</string>
+    <string name="state_off">aus</string>
+</resources>

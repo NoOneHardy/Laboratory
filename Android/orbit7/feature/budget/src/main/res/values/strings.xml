@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="budget_title">Budgets</string>
+    <string name="budget_period_month">Month</string>
+    <string name="budget_period_week">Week</string>
+    <string name="budget_baseline_caption">Baseline</string>
+    <string name="budget_baseline_pending">A baseline needs 28 days of data in a category. Keep logging and the ghost marker appears by itself.</string>
+    <string name="budget_baseline_value">Baseline %1$s per week</string>
+    <string name="budget_suggestion_caption">Suggestion</string>
+    <string name="budget_suggestion_body">Your baseline is %1$s per week. Target %2$s?</string>
+    <string name="budget_suggestion_accept">Accept</string>
+    <string name="budget_spent_of">%1$s of %2$s</string>
+</resources>

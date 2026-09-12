@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reports_title">Reports</string>
+    <string name="reports_loading">Reading the instruments…</string>
+    <string name="reports_locked_caption">Instruments offline</string>
+    <string name="reports_locked_body">Power up the %1$s to bring the charts online.</string>
+    <string name="reports_lifetime">Power generated, all time</string>
+    <string name="reports_streaks">Current streak %1$d weeks · best %2$d</string>
+    <string name="reports_success">Is this working?</string>
+    <string name="reports_contracts_salvaged">Contracts salvaged: %1$d</string>
+    <string name="reports_fixed_cost">Monthly fixed cost: %1$s then, %2$s now</string>
+    <string name="reports_baselines_down">Categories with a lower baseline than when you started: %1$d</string>
+    <string name="reports_weeks_settled">%1$d weeks settled</string>
+    <string name="reports_history">Settlement history</string>
+    <string name="reports_history_row">%1$d EP · %2$d%% · +%3$d%%</string>
+    <string name="reports_baseline">Baseline %1$s per week</string>
+</resources>

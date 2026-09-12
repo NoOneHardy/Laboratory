@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mirrors ReferenceColors.Void; only the system window chrome reads it. -->
+    <color name="void_background">#07090A</color>
+    <color name="phosphor_amber">#FFB000</color>
+</resources>

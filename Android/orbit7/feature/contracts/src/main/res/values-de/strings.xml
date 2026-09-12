@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drains_title">Abzapfungen</string>
+    <string name="drains_header">Dein Netz verliert %1$d EP pro Monat an %2$d Abzapfungen</string>
+    <string name="drains_header_money">%1$s Fixkosten pro Monat</string>
+    <string name="drains_bleed">%1$s/Monat · %2$d EP</string>
+    <string name="drains_deadline">Noch %1$d Tage zum Kündigen</string>
+    <string name="drains_deadline_urgent">Kündigungsfrist in %1$d Tagen</string>
+    <string name="drains_potential">Jetzt gekappt bringt das %1$d EP</string>
+    <string name="drains_cancel">Kündigen</string>
+    <string name="drains_renegotiate">Neu verhandeln</string>
+    <string name="drains_cancel_confirm_title">Diese Abzapfung kappen?</string>
+    <string name="drains_cancel_confirm_body">Das bringt einmalig %1$d EP und lässt sich nicht rückgängig machen. Kommt der Vertrag je zurück, wird er als neuer erfasst und bringt nichts.</string>
+    <string name="drains_cancel_confirm_action">Kappen</string>
+    <string name="drains_renegotiate_body">Aktuell %1$s. Wie hoch ist der neue Betrag?</string>
+    <string name="drains_salvaged">Geborgen</string>
+    <string name="drains_salvaged_total">%1$s pro Monat gespart</string>
+    <string name="drains_salvaged_row">%1$s – %2$s/Monat</string>
+    <string name="drains_empty_caption">Noch keine Abzapfungen</string>
+    <string name="drains_empty_body">Trag die üblichen Verdächtigen ein: Handy, Streaming, Fitness, Versicherung. Ein gekündigter Vertrag schlägt viele ausgelassene Kaffees.</string>
+    <string name="drains_add">Vertrag hinzufügen</string>
+
+    <string name="contract_name">Name</string>
+    <string name="contract_amount">Betrag</string>
+    <string name="contract_category">Kategorie</string>
+    <string name="contract_next_charge">Nächste Belastung</string>
+    <string name="contract_month_earlier">Früher</string>
+    <string name="contract_month_later">Später</string>
+    <string name="contract_notice_period">Kündigungsfrist</string>
+    <string name="contract_monthly_equivalent">%1$s pro Monat</string>
+    <string name="contract_deadline_caption">Letzter Kündigungstag</string>
+    <string name="contract_deadline_explained">Verlängert sich am %1$s, minus eine Kündigungsfrist von %2$s.</string>
+    <string name="cadence_monthly">Monatlich</string>
+    <string name="cadence_quarterly">Vierteljährlich</string>
+    <string name="cadence_yearly">Jährlich</string>
+    <string name="notice_none">keine</string>
+    <string name="notice_one_month">1 Monat</string>
+    <string name="notice_three_months">3 Monate</string>
+    <string name="notice_custom">individuell</string>
+</resources>

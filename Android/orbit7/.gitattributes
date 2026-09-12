@@ -1,0 +1,4 @@
+# The Gradle wrapper must survive checkout byte for byte.
+*.jar binary
+gradlew text eol=lf
+gradlew.bat text eol=crlf

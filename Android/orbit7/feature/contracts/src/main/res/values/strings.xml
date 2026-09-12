@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drains_title">Drains</string>
+    <string name="drains_header">Your grid loses %1$d EP/month to %2$d drains</string>
+    <string name="drains_header_money">%1$s per month in fixed costs</string>
+    <string name="drains_bleed">%1$s/month · %2$d EP</string>
+    <string name="drains_deadline">%1$d days left to cancel</string>
+    <string name="drains_deadline_urgent">Cancellation deadline in %1$d days</string>
+    <string name="drains_potential">Cutting it now pays %1$d EP</string>
+    <string name="drains_cancel">Cancel it</string>
+    <string name="drains_renegotiate">Renegotiate</string>
+    <string name="drains_cancel_confirm_title">Cut this drain?</string>
+    <string name="drains_cancel_confirm_body">This pays %1$d EP once, and cannot be undone. If the contract ever comes back, it is entered as a new one and pays nothing.</string>
+    <string name="drains_cancel_confirm_action">Cut it</string>
+    <string name="drains_renegotiate_body">Currently %1$s. What is the new amount?</string>
+    <string name="drains_salvaged">Salvaged</string>
+    <string name="drains_salvaged_total">%1$s per month saved</string>
+    <string name="drains_salvaged_row">%1$s — %2$s/month</string>
+    <string name="drains_empty_caption">No drains yet</string>
+    <string name="drains_empty_body">Add the obvious suspects: phone, streaming, gym, insurance. One cancelled contract beats a lot of skipped coffees.</string>
+    <string name="drains_add">Add a contract</string>
+
+    <string name="contract_name">Name</string>
+    <string name="contract_amount">Amount</string>
+    <string name="contract_category">Category</string>
+    <string name="contract_next_charge">Next charge</string>
+    <string name="contract_month_earlier">Earlier</string>
+    <string name="contract_month_later">Later</string>
+    <string name="contract_notice_period">Notice period</string>
+    <string name="contract_monthly_equivalent">%1$s per month</string>
+    <string name="contract_deadline_caption">Last day to cancel</string>
+    <string name="contract_deadline_explained">Renews %1$s, minus a notice period of %2$s.</string>
+    <string name="cadence_monthly">Monthly</string>
+    <string name="cadence_quarterly">Quarterly</string>
+    <string name="cadence_yearly">Yearly</string>
+    <string name="notice_none">none</string>
+    <string name="notice_one_month">1 month</string>
+    <string name="notice_three_months">3 months</string>
+    <string name="notice_custom">custom</string>
+</resources>

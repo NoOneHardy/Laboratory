@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Quick Add -->
+    <string name="quick_add_title">New entry</string>
+    <string name="quick_add_edit">Edit entry</string>
+    <string name="quick_add_amount_description">Amount: %1$s</string>
+    <string name="quick_add_amount_required">Enter an amount to save.</string>
+    <string name="quick_add_add_note">Add a note</string>
+    <string name="quick_add_previous_day">Earlier</string>
+    <string name="quick_add_next_day">Later</string>
+    <string name="quick_add_saved">Logged %1$s</string>
+    <string name="numpad_digit">Digit %1$d</string>
+    <string name="numpad_clear">C</string>
+    <string name="numpad_clear_description">Clear the amount</string>
+    <string name="numpad_backspace">←</string>
+    <string name="numpad_backspace_description">Delete the last digit</string>
+
+    <!-- Log -->
+    <string name="log_title">Log</string>
+    <string name="log_empty_title">Nothing logged yet</string>
+    <string name="log_empty_body">Every entry you log is a signal day, and signal days are what make a week pay out in full.</string>
+    <string name="log_filtered_empty_title">No entries match these filters</string>
+    <string name="log_clear_filters">Clear filters</string>
+    <string name="log_day_total">%1$s</string>
+    <string name="log_month_total">%1$s in %2$s</string>
+    <string name="log_entry_description">%1$s, %2$s, %3$s</string>
+    <string name="log_deleted">Entry deleted</string>
+    <string name="log_filter_category">Category</string>
+    <string name="log_filter_all">All</string>
+    <string name="log_filter_range">Period</string>
+    <string name="log_range_this_month">This month</string>
+    <string name="log_range_last_30">Last 30 days</string>
+    <string name="log_range_all">Everything</string>
+</resources>

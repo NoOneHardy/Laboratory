@@ -1,0 +1,141 @@
+name: ORBIT-7
+
+on:
+  push:
+    branches: ['**']
+    paths:
+      - 'Android/orbit7/**'
+      - '.github/workflows/android.yml'
+  pull_request:
+    paths:
+      - 'Android/orbit7/**'
+      - '.github/workflows/android.yml'
+
+concurrency:
+  group: orbit7-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: Android/orbit7
+
+jobs:
+  # Job A — the fast gate. Everything here runs on the JVM, with no emulator (docs/06 §10).
+  check:
+    name: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: ${{ github.ref != 'refs/heads/main' }}
+
+      - name: Static analysis (T0)
+        run: ./gradlew spotlessCheck detekt lint --stacktrace
+
+      - name: Unit tests (T1–T4)
+        run: ./gradlew testDebugUnitTest :core:domain:test :tooling:detekt-rules:test --stacktrace
+
+      - name: Screenshot tests (T5)
+        run: ./gradlew verifyPaparazziDebug --stacktrace
+
+      - name: Coverage gates
+        run: ./gradlew koverVerify --stacktrace
+
+      - name: Assemble
+        run: ./gradlew assembleDebug --stacktrace
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: |
+            Android/orbit7/**/build/reports/**
+            Android/orbit7/**/build/test-results/**
+          retention-days: 7
+
+      - name: Upload Paparazzi diffs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paparazzi-diffs
+          path: Android/orbit7/**/out/failures/**
+          retention-days: 7
+
+  # Job B — the emulator. Slow, high-value, and only where it earns its cost.
+  e2e:
+    name: e2e
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' \
+            | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: AVD cache
+        uses: actions/cache@v4
+        id: avd-cache
+        with:
+          path: |
+            ~/.android/avd/*
+            ~/.android/adb*
+          key: avd-34
+
+      - name: Create AVD and generate snapshot
+        if: steps.avd-cache.outputs.cache-hit != 'true'
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          force-avd-creation: false
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: false
+          script: echo "Generated AVD snapshot."
+
+      - name: End-to-end tests (T6)
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          force-avd-creation: false
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          working-directory: Android/orbit7
+          script: ./gradlew connectedDebugAndroidTest --stacktrace
+
+      - name: Upload instrumentation reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-reports
+          path: |
+            Android/orbit7/**/build/reports/androidTests/**
+            Android/orbit7/**/build/outputs/androidTest-results/**
+          retention-days: 7

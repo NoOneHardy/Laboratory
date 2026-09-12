@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Station power and what is left of this week\'s budget.</string>
+    <string name="widget_power">%1$d EP</string>
+    <string name="widget_power_description">Station power: %1$d energy points</string>
+    <string name="widget_remaining">%1$s left</string>
+    <string name="widget_today">Today %1$s</string>
+    <string name="widget_quick_add">Log a spend</string>
+    <string name="widget_empty">Open ORBIT-7 to begin</string>
+</resources>

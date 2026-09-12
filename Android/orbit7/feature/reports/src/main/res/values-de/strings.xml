@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="reports_title">Auswertung</string>
+    <string name="reports_loading">Instrumente werden gelesen…</string>
+    <string name="reports_locked_caption">Instrumente offline</string>
+    <string name="reports_locked_body">Versorge das %1$s mit Energie, um die Diagramme zu aktivieren.</string>
+    <string name="reports_lifetime">Erzeugte Energie, gesamt</string>
+    <string name="reports_streaks">Aktuelle Serie %1$d Wochen · beste %2$d</string>
+    <string name="reports_success">Funktioniert das?</string>
+    <string name="reports_contracts_salvaged">Geborgene Verträge: %1$d</string>
+    <string name="reports_fixed_cost">Fixkosten pro Monat: %1$s damals, %2$s heute</string>
+    <string name="reports_baselines_down">Kategorien mit tieferem Referenzwert als am Anfang: %1$d</string>
+    <string name="reports_weeks_settled">%1$d Wochen abgerechnet</string>
+    <string name="reports_history">Abrechnungsverlauf</string>
+    <string name="reports_history_row">%1$d EP · %2$d%% · +%3$d%%</string>
+    <string name="reports_baseline">Referenzwert %1$s pro Woche</string>
+</resources>

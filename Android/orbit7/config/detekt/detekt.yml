@@ -1,0 +1,56 @@
+build:
+  maxIssues: 0
+
+config:
+  validation: true
+  warningsAsErrors: true
+
+# The four hard rules from docs/05-architecture.md §5.
+orbit7:
+  active: true
+  NoDirectClockAccess:
+    active: true
+    # The only place allowed to read the wall clock is the DI module that provides the Clock.
+    allowedFiles: ['ClockModule.kt', 'TimeModule.kt']
+  NoFloatingPointMoney:
+    active: true
+    # Modules in which Double/Float may not appear at all.
+    restrictedPathFragments: ['core/domain', 'core/data']
+  NoHardcodedStringsInCompose:
+    active: true
+  NoEmptyCatch:
+    active: true
+
+complexity:
+  LongParameterList:
+    active: true
+    functionThreshold: 9
+    constructorThreshold: 12
+    ignoreAnnotated: ['Composable', 'Inject']
+  TooManyFunctions:
+    active: true
+    ignoreAnnotatedFunctions: ['Composable']
+    thresholdInFiles: 25
+    thresholdInClasses: 25
+
+style:
+  MagicNumber:
+    active: true
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreAnnotated: ['Composable', 'Preview']
+  MaxLineLength:
+    active: true
+    maxLineLength: 120
+  ForbiddenComment:
+    active: true
+    comments:
+      - reason: 'Unfinished work must be tracked in docs/07-roadmap.md, not in a comment.'
+        value: 'FIXME:'
+
+formatting:
+  MaximumLineLength:
+    active: true
+    maxLineLength: 120
+  FunctionNaming:
+    active: false

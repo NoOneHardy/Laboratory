@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_bridge">Brücke</string>
+    <string name="nav_log">Journal</string>
+    <string name="nav_station">Station</string>
+    <string name="nav_drains">Abzapfungen</string>
+    <string name="nav_quick_add">+</string>
+    <string name="nav_quick_add_description">Ausgabe erfassen</string>
+    <string name="nav_budgets">Budgets</string>
+    <string name="nav_reports">Auswertung</string>
+    <string name="nav_settings">Einstellungen</string>
+
+    <string name="channel_daily_reminder">Tägliche Erinnerung</string>
+    <string name="channel_daily_reminder_description">Eine Mitteilung am Abend, nur an Tagen ohne App-Nutzung.</string>
+    <string name="channel_contract_deadline">Kündigungsfristen</string>
+    <string name="channel_contract_deadline_description">30, 14 und 3 Tage bevor ein Vertrag nicht mehr gekündigt werden kann.</string>
+    <string name="channel_settlement">Wochenabschluss</string>
+    <string name="channel_settlement_description">Wenn eine Woche abgerechnet ist und Energie bereitsteht.</string>
+
+    <string name="notification_daily_title">%1$s bleiben diese Woche</string>
+    <string name="notification_daily_body">Heute ausgegeben: %1$s</string>
+    <string name="notification_action_quick_add">Ausgabe erfassen</string>
+    <string name="notification_action_zero_spend">Heute nichts ausgegeben</string>
+    <string name="notification_deadline_title">%1$s lässt sich noch kündigen</string>
+    <string name="notification_deadline_body">Noch %1$d Tage, um zu kündigen.</string>
+    <string name="notification_settlement_title">Die Woche ist abgerechnet</string>
+    <string name="notification_settlement_body">%1$d EP erzeugt.</string>
+
+    <string name="debug_title">Zeitreise</string>
+    <string name="debug_warning">Nur Debug-Builds. Alles hier schreibt in die echte Datenbank.</string>
+    <string name="debug_clock">Uhr: %1$s</string>
+    <string name="debug_advance_day">+1 Tag</string>
+    <string name="debug_advance_week">+1 Woche</string>
+    <string name="debug_advance_month">+4 Wochen</string>
+    <string name="debug_generate">Ein Jahr Ausgaben erzeugen</string>
+    <string name="debug_settle">Abrechnung jetzt ausführen</string>
+    <string name="debug_simulate_year">Ein Jahr simulieren</string>
+    <string name="debug_result">Guthaben %1$d EP nach %2$d abgerechneten Wochen</string>
+    <string name="debug_gallery">Komponenten-Galerie</string>
+</resources>

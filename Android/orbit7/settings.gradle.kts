@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "orbit7"
+
+include(":app")
+include(":core:domain")
+include(":core:data")
+include(":core:designsystem")
+include(":core:testing")
+include(":feature:expenses")
+include(":feature:budget")
+include(":feature:station")
+include(":feature:contracts")
+include(":feature:reports")
+include(":feature:settings")
+include(":widget")
+include(":tooling:detekt-rules")

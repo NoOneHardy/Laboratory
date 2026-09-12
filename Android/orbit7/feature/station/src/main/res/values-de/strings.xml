@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bridge_title">Brücke</string>
+    <string name="bridge_booting">Hochfahren</string>
+    <string name="bridge_booting_body">Netz wird aufgebaut…</string>
+    <string name="bridge_power">Energie</string>
+    <string name="bridge_power_description">%1$d Energiepunkte gespeichert</string>
+    <string name="bridge_provisional">%1$d EP diese Woche – gutgeschrieben erst beim Wochenabschluss</string>
+    <string name="bridge_week_headroom">Reaktorreserve</string>
+    <string name="bridge_remaining">%1$s bleiben diese Woche</string>
+    <string name="bridge_overdrawn_by">%1$s über dem Budget</string>
+    <string name="bridge_gauge_remaining">%1$s des Wochenbudgets übrig</string>
+    <string name="bridge_gauge_overdrawn">Budget um %1$s überschritten</string>
+    <string name="bridge_zero_spend_mark">Heute nichts ausgegeben</string>
+    <string name="bridge_zero_spend_confirmed">Vermerkt: heute nichts ausgegeben</string>
+    <string name="bridge_streak">Serie: %1$d Wochen, +%2$d%%</string>
+    <string name="bridge_deadline">Nächste Frist</string>
+    <string name="bridge_deadline_body">%1$s – noch %2$d Tage zum Kündigen</string>
+    <string name="bridge_deadline_urgent">Kündigungsfrist in %1$d Tagen</string>
+    <string name="bridge_settlement_ready">Die Woche ist abgerechnet</string>
+    <string name="bridge_settlement_open">Ergebnis ansehen</string>
+    <string name="bridge_first_run_caption">ORBIT-7 ist dunkel</string>
+    <string name="bridge_first_run_body">Erfasse, was du ausgibst. Was unter dem Budget bleibt, wird am Wochenende zu Energie – und Energie bringt die Station zurück ans Netz.</string>
+    <string name="bridge_first_run_action">Ersten Eintrag erfassen</string>
+
+    <string name="station_title">Station</string>
+    <string name="station_description">ORBIT-7: %1$s</string>
+    <string name="station_description_module">%1$s Stufe %2$d von %3$d</string>
+    <string name="station_description_dark">ORBIT-7 ist dunkel. Noch hat kein Modul Energie.</string>
+    <string name="station_module_description">%1$s, Stufe %2$d von %3$d, nächste Stufe %4$d Energiepunkte</string>
+    <string name="station_level_short">S%1$d</string>
+    <string name="station_next_goal">Nächstes Ziel</string>
+    <string name="station_ep_to_go">%1$s – noch %2$d EP</string>
+    <string name="station_power_up">Mit Energie versorgen</string>
+    <string name="station_maxed">Voll ausgebaut</string>
+    <string name="station_locked">Benötigt %1$s</string>
+    <string name="station_requires">Zuerst %1$s mit Energie versorgen.</string>
+    <string name="station_shortfall">Es fehlen %1$d EP.</string>
+
+    <string name="settlement_title">Woche abgerechnet</string>
+    <string name="settlement_none">Es wurde noch nichts abgerechnet.</string>
+    <string name="settlement_generated_description">%1$d Energiepunkte erzeugt</string>
+    <string name="settlement_breakdown">%1$d EP erzeugt · Verlässlichkeit %2$d%% · Serie +%3$d%% · %4$d EP abgelassen</string>
+    <string name="settlement_week">Die Woche</string>
+    <string name="settlement_budget_vs_spend">Budgetiert %1$s, ausgegeben %2$s</string>
+    <string name="settlement_signal_days">%1$d von 7 Tagen mit Signal</string>
+    <string name="settlement_streak_advanced">Serie hält. Bonus +%1$d%%</string>
+    <string name="settlement_streak_reset">Netz neu synchronisiert. Serienbonus zurück auf ×1.00</string>
+    <string name="settlement_now_affordable">Jetzt erschwinglich</string>
+    <string name="settlement_open_station">Zur Station</string>
+</resources>

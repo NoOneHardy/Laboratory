@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_bridge">Bridge</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_station">Station</string>
+    <string name="nav_drains">Drains</string>
+    <string name="nav_quick_add">+</string>
+    <string name="nav_quick_add_description">Log a spend</string>
+    <string name="nav_budgets">Budgets</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="channel_daily_reminder">Daily reminder</string>
+    <string name="channel_daily_reminder_description">One notification in the evening, only on days the app was not used.</string>
+    <string name="channel_contract_deadline">Contract deadlines</string>
+    <string name="channel_contract_deadline_description">30, 14 and 3 days before a contract can no longer be cancelled.</string>
+    <string name="channel_settlement">Weekly settlement</string>
+    <string name="channel_settlement_description">When a week has been settled and power is waiting.</string>
+
+    <string name="notification_daily_title">%1$s left this week</string>
+    <string name="notification_daily_body">Spent today: %1$s</string>
+    <string name="notification_action_quick_add">Log a spend</string>
+    <string name="notification_action_zero_spend">Nothing spent today</string>
+    <string name="notification_deadline_title">%1$s can still be cancelled</string>
+    <string name="notification_deadline_body">%1$d days left to give notice.</string>
+    <string name="notification_settlement_title">The week has been settled</string>
+    <string name="notification_settlement_body">%1$d EP generated.</string>
+
+    <string name="debug_title">Time travel</string>
+    <string name="debug_warning">Debug builds only. Everything here writes to the real database.</string>
+    <string name="debug_clock">Clock: %1$s</string>
+    <string name="debug_advance_day">+1 day</string>
+    <string name="debug_advance_week">+1 week</string>
+    <string name="debug_advance_month">+4 weeks</string>
+    <string name="debug_generate">Generate a year of spending</string>
+    <string name="debug_settle">Run settlement now</string>
+    <string name="debug_simulate_year">Simulate a year</string>
+    <string name="debug_result">Balance %1$d EP after %2$d settled weeks</string>
+    <string name="debug_gallery">Component gallery</string>
+</resources>
