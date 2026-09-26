@@ -1,0 +1,109 @@
+[
+  {
+    "id": "veggie-bowl",
+    "title": "Geröstete Gemüse-Bowl",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Süßkartoffel", "quantity": 400, "unit": "g"},
+      {"name": "Kichererbsen", "quantity": 240, "unit": "g"},
+      {"name": "Paprika", "quantity": 1, "unit": "stk"},
+      {"name": "Babyspinat", "quantity": 80, "unit": "g", "optional": true},
+      {"name": "Tahini", "quantity": 40, "unit": "g", "optional": true}
+    ],
+    "tags": ["vegan", "ofen", "ballaststoffreich"],
+    "steps": [
+      "Süßkartoffel und Paprika würfeln, mit Öl und Salz im Ofen rösten.",
+      "Kichererbsen abspülen, würzen und mitrösten.",
+      "Alles mit Spinat und Tahini-Dressing servieren."
+    ],
+    "time": {"prep": 10, "cook": 30},
+    "appliances": ["Ofen"],
+    "allergens": []
+  },
+  {
+    "id": "pasta-pesto",
+    "title": "Pasta mit Kräuter-Pesto",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Pasta", "quantity": 200, "unit": "g"},
+      {"name": "Basilikum", "quantity": 20, "unit": "g"},
+      {"name": "Olivenöl", "quantity": 30, "unit": "ml"},
+      {"name": "Parmesan", "quantity": 30, "unit": "g", "optional": true},
+      {"name": "Pinienkerne", "quantity": 20, "unit": "g", "optional": true},
+      {"name": "Zitrone", "quantity": 0.5, "unit": "stk", "optional": true}
+    ],
+    "tags": ["vegetarisch", "schnell"],
+    "steps": [
+      "Pasta kochen.",
+      "Basilikum, Öl und optional Parmesan/Pinienkerne im Mixer pürieren.",
+      "Mit Zitronensaft abschmecken und Pasta darin schwenken."
+    ],
+    "time": {"prep": 5, "cook": 12},
+    "appliances": ["Herd", "Mixer"],
+    "allergens": ["Milch"]
+  },
+  {
+    "id": "lentil-curry",
+    "title": "Linsen-Kokos-Curry",
+    "servings": 4,
+    "ingredients": [
+      {"name": "Rote Linsen", "quantity": 200, "unit": "g"},
+      {"name": "Kokosmilch", "quantity": 400, "unit": "ml"},
+      {"name": "Currypaste", "quantity": 30, "unit": "g"},
+      {"name": "Karotten", "quantity": 2, "unit": "stk"},
+      {"name": "Zwiebel", "quantity": 1, "unit": "stk"},
+      {"name": "Limette", "quantity": 0.5, "unit": "stk", "optional": true}
+    ],
+    "tags": ["vegan", "one-pot"],
+    "steps": [
+      "Zwiebel und Karotten anschwitzen, Currypaste einrühren.",
+      "Linsen und Kokosmilch hinzufügen, köcheln lassen.",
+      "Mit Limette abschmecken."
+    ],
+    "time": {"prep": 10, "cook": 25},
+    "appliances": ["Topf"],
+    "allergens": []
+  },
+  {
+    "id": "tofu-stirfry",
+    "title": "Tofu-Gemüse-Wok",
+    "servings": 3,
+    "ingredients": [
+      {"name": "Tofu", "quantity": 250, "unit": "g"},
+      {"name": "Brokkoli", "quantity": 250, "unit": "g"},
+      {"name": "Sojasauce", "quantity": 40, "unit": "ml"},
+      {"name": "Ingwer", "quantity": 10, "unit": "g", "optional": true},
+      {"name": "Reis", "quantity": 200, "unit": "g"}
+    ],
+    "tags": ["asiatisch", "pfanne"],
+    "steps": [
+      "Reis kochen.",
+      "Tofu anbraten, Brokkoli hinzufügen und kurz garen.",
+      "Mit Sojasauce und Ingwer abschmecken."
+    ],
+    "time": {"prep": 10, "cook": 20},
+    "appliances": ["Pfanne"],
+    "allergens": ["Soja"]
+  },
+  {
+    "id": "sheet-pan-fish",
+    "title": "Blechfisch mit Gemüse",
+    "servings": 2,
+    "ingredients": [
+      {"name": "Weißfisch", "quantity": 300, "unit": "g"},
+      {"name": "Kartoffeln", "quantity": 400, "unit": "g"},
+      {"name": "Zucchini", "quantity": 1, "unit": "stk"},
+      {"name": "Zitrone", "quantity": 0.5, "unit": "stk"},
+      {"name": "Olivenöl", "quantity": 20, "unit": "ml"}
+    ],
+    "tags": ["fisch", "ofen"],
+    "steps": [
+      "Kartoffeln und Zucchini würfeln, mit Öl würzen und im Ofen vorbacken.",
+      "Fisch auf das Blech legen, mit Zitrone beträufeln und fertig garen.",
+      "Mit Salz und Pfeffer servieren."
+    ],
+    "time": {"prep": 10, "cook": 30},
+    "appliances": ["Ofen"],
+    "allergens": ["Fisch"]
+  }
+]
