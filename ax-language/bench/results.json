@@ -1,0 +1,205 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+    "cpu": "AMD EPYC 9V45 96-Core Processor",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "flags": [
+      "-std=c11",
+      "-O3"
+    ],
+    "samples": 5,
+    "tokenizer": "tiktoken 0.14.0 o200k_base"
+  },
+  "kernels": {
+    "div64": {
+      "tokens": {
+        "tagged_wire": 75,
+        "canonical": 112,
+        "wire": 73,
+        "C": 141,
+        "Python": 76
+      },
+      "runs": {
+        "native": {
+          "calls": 2000000,
+          "checksum": 4113334677868185165,
+          "ns_per_call": [
+            2.62,
+            3.09,
+            3.27,
+            2.79,
+            2.65
+          ],
+          "peak_rss_kib": [
+            616,
+            616,
+            620,
+            616,
+            620
+          ],
+          "median_ns": 2.79,
+          "median_kib": 616
+        },
+        "C": {
+          "calls": 2000000,
+          "checksum": 4113334677868185165,
+          "ns_per_call": [
+            2.75,
+            2.4,
+            2.63,
+            2.47,
+            2.75
+          ],
+          "peak_rss_kib": [
+            620,
+            620,
+            620,
+            616,
+            620
+          ],
+          "median_ns": 2.63,
+          "median_kib": 620
+        },
+        "interpreter": {
+          "calls": 8192,
+          "checksum": 15955904768115827717,
+          "ns_per_call": [
+            4970.1,
+            5485.1,
+            5226.22,
+            5101.8,
+            6028.83
+          ],
+          "peak_rss_kib": [
+            9712,
+            9716,
+            9720,
+            9716,
+            9716
+          ],
+          "median_ns": 5226.22,
+          "median_kib": 9716
+        },
+        "Python": {
+          "calls": 8192,
+          "checksum": 15955904768115827717,
+          "ns_per_call": [
+            550.17,
+            367.96,
+            383.47,
+            391.65,
+            414.26
+          ],
+          "peak_rss_kib": [
+            8704,
+            8708,
+            8712,
+            8708,
+            8708
+          ],
+          "median_ns": 391.65,
+          "median_kib": 8708
+        }
+      }
+    },
+    "sum": {
+      "tokens": {
+        "tagged_wire": 163,
+        "canonical": 244,
+        "wire": 156,
+        "C": 223,
+        "Python": 184
+      },
+      "runs": {
+        "native": {
+          "calls": 150000,
+          "checksum": 1638057560,
+          "ns_per_call": [
+            157.77,
+            132.13,
+            139.0,
+            136.18,
+            137.83
+          ],
+          "peak_rss_kib": [
+            616,
+            616,
+            620,
+            620,
+            620
+          ],
+          "median_ns": 137.83,
+          "median_kib": 620
+        },
+        "C": {
+          "calls": 150000,
+          "checksum": 1638057560,
+          "ns_per_call": [
+            131.06,
+            119.76,
+            117.01,
+            146.13,
+            167.04
+          ],
+          "peak_rss_kib": [
+            620,
+            620,
+            620,
+            616,
+            616
+          ],
+          "median_ns": 131.06,
+          "median_kib": 620
+        },
+        "interpreter": {
+          "calls": 512,
+          "checksum": 5592320,
+          "ns_per_call": [
+            613740.79,
+            634933.32,
+            685500.95,
+            641761.72,
+            632309.32
+          ],
+          "peak_rss_kib": [
+            9696,
+            9704,
+            9704,
+            9704,
+            9704
+          ],
+          "median_ns": 634933.32,
+          "median_kib": 9704
+        },
+        "Python": {
+          "calls": 512,
+          "checksum": 5592320,
+          "ns_per_call": [
+            10912.33,
+            9313.2,
+            10039.17,
+            10226.69,
+            9472.12
+          ],
+          "peak_rss_kib": [
+            8692,
+            8696,
+            8696,
+            8696,
+            8700
+          ],
+          "median_ns": 10039.17,
+          "median_kib": 8696
+        }
+      }
+    }
+  },
+  "edit_tokens": {
+    "axl_node": 73,
+    "axl_dependencies": 97,
+    "axl_patch": 45,
+    "c_line": 55,
+    "c_patch": 48
+  }
+}
